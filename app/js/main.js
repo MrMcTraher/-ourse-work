@@ -5,7 +5,7 @@ $(function () {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     infinite: true,
     responsive: [
       {
@@ -24,6 +24,63 @@ $(function () {
           infinite: true,
         },
       },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
     ],
   });
 });
+/* $(".partners__slider").slick({
+  dots: false,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  infinite: true,
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+  ],
+}); */
+
+/* const titleElements = document.querySelectorAll(".footer__menu-title");
+titleElements.forEach(function (titleElement) {
+  titleElement.addEventListener("click", function () {
+    const nextElement = this.nextElementSibling;
+    if (nextElement) {
+      nextElement.style.display =
+        nextElement.style.display === "none" || nextElement.style.display === ""
+          ? "block"
+          : "none";
+    }
+  });
+}); */

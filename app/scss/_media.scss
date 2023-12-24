@@ -468,6 +468,11 @@
     }
   }
 
+  .partners {
+    &__slider-img {
+    }
+  }
+
   .scope {
     padding: 30px 0;
     &__suptitle {
@@ -600,6 +605,57 @@
       margin-top: 0;
     }
   }
+
+  .device {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 10px;
+    }
+
+    &__link {
+      font-size: 14px;
+      &::after {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .partners {
+    &::after {
+      max-width: 320px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+  }
+
+  .blog {
+    padding-bottom: 30px;
+    &__img {
+      width: 300px;
+      height: 200px;
+    }
+
+    &__title {
+      max-width: 300px;
+      font-size: 13px;
+    }
+  }
+
+  .footer {
+    &__menu {
+    }
+
+    &__menu-list {
+    }
+
+    &__menu-title {
+      cursor: pointer;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -618,6 +674,132 @@
       line-height: 1.2;
       letter-spacing: 0;
       font-size: 9px;
+    }
+  }
+
+  .insurance {
+    &__item--left {
+      padding-right: 10px;
+    }
+
+    &__suptitle {
+      font-size: 9px;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-size: 13px;
+      margin-bottom: 13px;
+    }
+
+    &__text {
+      font-size: 9px;
+    }
+
+    &__footer-num {
+      font-size: 20px;
+    }
+
+    &__footer-text {
+      font-size: 8px;
+    }
+  }
+
+  .device {
+    &__item--info {
+      padding: 10px 0 0 20px;
+    }
+  }
+
+  .slick-track {
+    gap: 25px;
+  }
+
+  .connection {
+    &__item--info {
+      padding: 30px 20px 30px 20px;
+    }
+  }
+
+  .partners {
+    &__title {
+      font-size: 25px;
+    }
+  }
+
+  .device {
+    &__suptitle {
+      font-size: 8px;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 8px;
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      font-size: 11px;
+      max-width: 75px;
+      &::after {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .scope {
+    &__title {
+      font-size: 14px;
+      max-width: 185px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      max-width: 185px;
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      font-size: 12px;
+      max-width: 80px;
+      &::after {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .footer {
+    padding: 15px 0;
+    &__item--menu {
+      gap: 15px;
+    }
+
+    &__menu-list {
+      gap: 8px;
+    }
+    &__copyright {
+      font-size: 8px;
+    }
+    &__copyright-link:first-child::after {
+      right: -13px;
+    }
+    &__bottom-text {
+      font-size: 8px;
+      &:nth-child(1) {
+        margin-bottom: 12px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 12px;
+      }
+    }
+    &__bottom-text-wrapper {
+      margin-bottom: 15px;
     }
   }
 }
@@ -652,5 +834,11 @@
   }
   .about > .container {
     padding: 0 5px;
+  }
+
+  .partners {
+    &::after {
+      max-width: 200px;
+    }
   }
 }

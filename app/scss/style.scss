@@ -698,7 +698,15 @@ font-family: 'Roboto', sans-serif;
 
   &__item {
   }
-
+  &__menu-title {
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.84;
+    letter-spacing: 0.02px;
+    text-transform: uppercase;
+  }
   &__item--menu {
     display: flex;
     max-width: 592px;
@@ -711,7 +719,9 @@ font-family: 'Roboto', sans-serif;
   }
 
   &__menu {
-	
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   &__menu-list {
@@ -721,9 +731,6 @@ font-family: 'Roboto', sans-serif;
   }
 
   &__menu-item {
-    &:first-child {
-      font-weight: 700;
-    }
     &::after {
       content: "";
       display: block;
