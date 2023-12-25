@@ -10,11 +10,13 @@ font-family: 'Roboto', sans-serif;
  */
 
 .header {
+  position: relative;
   &__wrapper {
     padding: 19px 63px 31px 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    line-height: 1.53;
   }
 
   &__logo {
@@ -23,7 +25,7 @@ font-family: 'Roboto', sans-serif;
   }
 
   &__inner {
-    padding: 10px 0 10px 28px;
+    padding: 0 0 0 28px;
     display: flex;
     font-size: 14px;
     font-weight: 700;
@@ -31,6 +33,8 @@ font-family: 'Roboto', sans-serif;
 
   &__menu {
     padding-right: 69px;
+    display: flex;
+    align-items: center;
   }
 
   &__menu-list {
@@ -57,9 +61,47 @@ font-family: 'Roboto', sans-serif;
   }
 
   &__buttons {
+    display: flex;
+    align-items: center;
   }
 
   &__link {
+  }
+
+  &__link-wrapper {
+    display: inline;
+    position: relative;
+  }
+
+  &__sublist {
+    position: absolute;
+    background-color: rgba($green, 0.5);
+    border-radius: 8px;
+  }
+
+  .header__sublist--disabled {
+    display: none;
+  }
+
+  &__sublist-item {
+    padding: 10px 10px 0 5px;
+    color: #fff;
+    &:last-child {
+      margin-bottom: 10px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 80%;
+      background-color: #fff;
+      opacity: 0;
+      transition: opacity 0.2s linear;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
   }
 
   &__link--request {
@@ -68,6 +110,7 @@ font-family: 'Roboto', sans-serif;
     border-radius: 6px;
     color: #fff;
     margin-right: 29px;
+    max-height: 42px;
   }
 
   &__link--login {
@@ -87,11 +130,45 @@ font-family: 'Roboto', sans-serif;
   &__btn {
     background: transparent;
     border: none;
+    cursor: pointer;
+  }
+
+  &__btn--disabled {
     display: none;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+  }
+
+  &__btn-span {
+    gap: 5px;
+    &:nth-child(2),
+    &:nth-child(4) {
+      width: 40px;
+      height: 4px;
+      background-color: #000;
+      border-radius: 8px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      width: 30px;
+      height: 4px;
+      background-color: #000;
+      border-radius: 8px;
+    }
   }
 
   &__btn-icon {
   }
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .intro {

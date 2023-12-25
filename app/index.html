@@ -17,6 +17,21 @@
 
 	<header class="header">
 		<div class="header__wrapper">
+			<div class="mobile-menu ">
+				<ul class="mobile-menu__list">
+					<li class="mobile-menu__item">Our Plan</li>
+					<li class="mobile-menu__item">Employers</li>
+					<li class="mobile-menu__item">Brokers</li>
+					<li class="mobile-menu__item">Members</li>
+					<li class="mobile-menu__item">About</li>
+					<li class="mobile-menu__item">Blog</li>
+					<div class="mobile-menu__links">
+						<a class="mobile-menu__link" href="#">Request a demo</a>
+						<a class="mobile-menu__link mobile-menu__link--login" href="#">Login</a>
+						<a class="mobile-menu__link" href="#">EN</a>
+					</div>
+				</ul>
+			</div>
 			<a class="logo__wrapper-link" href="#">
 				<img class="header__logo" src="./images/header/Frame.png" alt="logo">
 			</a>
@@ -24,33 +39,52 @@
 				<nav class="header__menu">
 					<ul class="header__menu-list">
 						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Our Plan</a>
+							<a class="header__menu-link" href="#">Our Plan</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Employers</a>
+							<a class="header__menu-link" href="#">Employers</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Brokers</a>
+							<a class="header__menu-link" href="#">Brokers</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Members</a>
+							<a class="header__menu-link" href="#">Members</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="" class="header__menu-link">About</a>
+							<a class="header__menu-link" href="#">About</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Blog</a>
+							<a class="header__menu-link" href="#">Blog</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="header__buttons">
 					<a class="header__link header__link--request" href="#">Request a demo</a>
-					<a class="header__link header__link--login" href="#">Login</a>
+					<div class="header__link-wrapper">
+						<a class="header__link header__link--login" href="#">Login</a>
+						<ul class="header__sublist header__sublist--disabled">
+							<li class="header__sublist-item">
+								<a class="header__sublist-link" href="#">Log in</a>
+							</li>
+							<li class="header__sublist-item">
+								<a class="header__sublist-link" href="#">Sign up</a>
+							</li>
+							<li class="header__sublist-item">
+								<a class="header__sublist-link" href="#">Forgot password?</a>
+							</li>
+						</ul>
+					</div>
 					<a class="header__link header__link--lang" href="#">EN</a>
 				</div>
 			</div>
-			<button class="header__btn">
-				<img class="header__btn-icon" src="./images/header/icon_menu.svg" alt="icon">
+			<button class="header__btn header__btn--disabled">
+				<div class="header__btn-wrapper header__btn-wrapper">
+					<span class="header__btn-span header__btn-span--active"></span>
+					<span class="header__btn-span header__btn-span--active"></span>
+					<span class="header__btn-span header__btn-span--active"></span>
+					<span class="header__btn-span header__btn-span--active"></span>
+				</div>
+				<!-- <img class="header__btn-icon" src="./images/header/icon_menu.svg" alt="icon"> -->
 			</button>
 		</div>
 	</header>
@@ -302,7 +336,7 @@
 					<div class="footer__menu">
 						<h5 class="footer__menu-title">Join Brella</h5>
 						<ul class="footer__menu-list">
-							
+
 							<li class="footer__menu-item">
 								<a class="footer__menu-link" href="#">Our Plan</a>
 							</li>
@@ -321,7 +355,7 @@
 					<div class="footer__menu">
 						<h5 class="footer__menu-title">Company</h5>
 						<ul class="footer__menu-list">
-							
+
 							<li class="footer__menu-item">
 								<a class="footer__menu-link" href="#">About</a>
 							</li>

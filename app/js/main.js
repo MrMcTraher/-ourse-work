@@ -35,6 +35,22 @@ $(function () {
     ],
   });
 });
+
+const linkLogin = document.querySelector(".header__link--login");
+const mobileMenuBtn = document.querySelector(".header__btn");
+
+linkLogin.addEventListener("click", function () {
+  document
+    .querySelector(".header__sublist")
+    .classList.toggle("header__sublist--disabled");
+});
+
+mobileMenuBtn.addEventListener("click", function () {
+  document
+    .querySelector(".mobile-menu")
+    .classList.toggle("mobile-menu--active");
+});
+
 /* $(".partners__slider").slick({
   dots: false,
   arrows: true,
