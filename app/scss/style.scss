@@ -885,6 +885,10 @@ font-family: 'Roboto', sans-serif;
   }
 
   &__social-icon {
+    transition: transform 0.2s linear;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__btn {
